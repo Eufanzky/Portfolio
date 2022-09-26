@@ -16,35 +16,152 @@
 
 </head>
 <body>
-    <!--******* HEADER: LOGO AND NAVBAR **********-->
-    <header class="header-container">
-        <div class="header-logo">
-            <span>E</span>
-        </div>
-        <nav class="header-nav">
-            <li><a href="">HOME</a></li>
-            <li><a href="">ABOUT ME</a></li>
-            <li><a href="">PROJECTS</a></li>
-            <li><a href="">CONTACT</a></li>
-        </div>
-    </header>
+    <!--******* HEADER **********-->
+    <nav class="nav-container">
+        <input class="nav__checkbox" type="checkbox" name="" id ="nav__checkbox" >
+        <label class="nav__toggle" for="nav__checkbox" >
+            <i class="menu fa-solid fa-bars"></i> <!--burger menu-->
+            <i class="close fa-solid fa-x"></i> <!--x menu-->
+        </label>
+        <ul class="nav__menu">
+            <li class="menu__logo">
+                <span>E</span>
+            </li>
+            <li><a href="#">AboutMe</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+    </nav>
+
     <!--***************** MAIN CONTENT ***************-->
     <main>
+        <!-- presentation -->
         <section class="home-section">
-            <figure>
-                <img>
+            <figure class="home-photo">
+                <img src="https://media-exp1.licdn.com/dms/image/D4E03AQGOKi4MV4MJrg/profile-displayphoto-shrink_800_800/0/1661376724146?e=1668643200&v=beta&t=esz-x-l8IXHWkVnTq3u493wDdYMG7kxVmShSsuEXAig" alt="my photo">
                 <figcaption></figcaption>
             </figure>
-            <div>
-
+            <div class="home-words">
+                <h2>Hello I'm Eugenio Condori</h2>
+                <h1>Frontend Developer</h1>
+                <p>
+                    I'm a self taught Frontend Developer, who never stops learning and has a passion with technology.
+                </p>
+                <button type="button">About Me</button>
             </div>
         </section>
+        <!-- about me -->
         <section class="about-section">
-
+            <h2 class="about-title">About Me</h2>
+            <div class="about-description">
+                Hello!, My name is Eugenio Condori, I'm a a self taught Frontend Developer, I love technology
+                like coding and enjoys gaming.
+            </div>
+            <div class="about-skills">
+                <h3>My Skills</h3>
+                <ul>
+                    <li>
+                        <p>HTML</p>
+                        <i class="fa-brands fa-html5"></i>
+                    </li>
+                    <li>
+                        <p>CSS</p>
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </li>
+                    <li>
+                        <p>JS</p>
+                        <i class="fa-brands fa-js"></i>
+                    </li>
+                    <li>
+                        <p>GIT</p>
+                        <i class="fa-brands fa-git-alt"></i>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section class="projects-section">
 
-        </section class="contact-section">
+        <!-- my projects -->
+        <section class="projects-section">
+            <div class="projects-title">
+                <h2>My Projects</h2>
+                <p>Made mainly with HTML CSS and JavaScript</p>
+                <button type="button">View All</button>
+            </div>
+
+            <div class="projects-projects">
+                <div class="project-container">
+                    <div>
+                        <figure>
+                            <img src="./src/img/twitterClon.png" alt="">
+                        </figure>
+                    </div>
+                    <h3>Twitter Clon</h3>
+                    <a href="">Know More -></a>
+                </div>
+
+                <div class="project-container">
+                    <div>
+                        <figure>
+                            <img src="./src/img/youtube-clon.png" alt="">
+                        </figure>
+                    </div>
+                    <h3>YouTube Clon</h3>
+                    <a href="">Know More -></a>
+                </div>
+
+                <div class="project-container">
+                    <div>
+                        <figure>
+                            <img src="./src/img/databit.png" alt="">
+                        </figure>
+                    </div>
+                    <h3>DataBit</h3>
+                    <a href="">Know More -></a>
+                </div>
+
+                <div class="project-container">
+                    <div>
+                        <figure>
+                            <img src="./src/img/clockTime.png" alt="">
+                        </figure>
+                    </div>
+                    <h3>Clock Time</h3>
+                    <a href="">Know More -></a>
+                </div>
+            </div>
+            
+        </section>
+
+        <!-- contact me section -->
+        <section class="contact-section">
+            <div>
+                <h2>Let's work together on your next project</h2>
+                <a href="">CONTACT</a>
+            </div>
+        </section>
     </main>
+
+    <!--***************** FOOTER CONTENT ***************-->
+    <footer>
+        <div class="footer-sections">
+            <p>HOME</p>
+            <p>ABOUT</p>
+            <p>PROJECTS</p>
+            <p>CONTACT</p>
+        </div>
+        <div class="footer-links">
+            <p>E</p>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <p>Created with 💚 by Eufanzky</p>
+        </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/6babf6a4d6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- i guess there is no gonna be a footer -->
 </body>
 </html>
