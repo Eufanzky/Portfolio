@@ -1,59 +1,108 @@
 /************************CONTACT SECTION*************/
-
 .contact-section {
-    padding-top: 100px;
     width: 100vw;
-    height: 500px;
+    height: 900px;
+
+    background-color: var(--rich-black);
+
+    display: grid;
+    place-items: center;
+}
+
+.contact-section-box {
+    width: 80%;
+    height: 700px;
 
     display: flex;
     flex-direction: column;
-    place-items: center;
-    place-content: center;
-    background-color: var(--rich-black);
-}
+    justify-content: space-evenly;
+    align-items: center;
 
-.contact-section .contact-section-introduction {
-    background-color: black;  
-    width: 80%;
-    max-width: 510px;
-    height: 500px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    place-items: center;
-    box-shadow: 0px 0px 5px var(--ghost-white);
-    border: solid 1.5px white;
+    background-color: black;
+    border: solid var(--ghost-white) 1px;
+    box-shadow: 0px 0px 10px var(--ghost-white);
 }
-.contact-section .contact-section-introduction:nth-child(n) {
-    color: white;
-    padding: 5px 50px;
+.contact-section-box h2{
+    color: var(--ghost-white);
+    font-size: 1.95rem;
+    text-align: center;
 }
-.contact-section  h2 {
-    font-size: 1.2rem;
-}
-.contact-section .contact-section-social-networks {
-    width: 100%;
+.contact-section-box .social-networks {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    justify-content: center;
 }
-.contact-section .contact-section-social-networks a {
-    width: 160px;
-    height: 54px;
-    padding: 15px 0px;
-    background-color: var(--blue-sapphire);
-    color: var(--ghost-white);
-    border: none;
-    font-weight: bolder;
-    font-size: 1.3rem;
-    text-align: center;
-    transition: 0.2s;
-}
-.contact-section a:hover {
-    background-color: var(--international-orange-engineering);
+.contact-section-box .social-networks a {
+    margin: 0px 10px;
+    font-size: 2.5rem;
 }
 
-.contact-form {
+.contact-section-box .contact-form {
+    width: 90%;
+    max-width: 500px;
+    height: 50%;
     display: flex;
     flex-direction: column;
+}
+.contact-section-box .contact-form label {
+    margin: 10px 0px;
+    color: var(--ghost-white);
+    font-size: 1.1rem;
+}
+.contact-section-box .contact-form input {
+    height: 25px;
+}
+.contact-section-box .contact-form textarea {
+    height: 100px;
+}
+
+
+.contact-section-box .contact-form .send-button  {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: var(--international-orange-engineering);
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.contact-section-box .contact-form .send-button :hover,
+.contact-section-box .contact-form .send-button :focus {
+  background-color: var(--cyan-process);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.contact-section-box .contact-form .send-button :hover {
+  transform: translateY(-1px);
+}
+
+.contact-section-box .contact-form .send-button :active {
+  background-color: var(--cyan-process);
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+.message-sent {
+   
+    color: var(--ghost-white);
+
 }

@@ -31,6 +31,9 @@ footer {
 }
 
 .footer-sections {
+    width: 100vw;
+    display: column;
+    justify-content: space-evenly;
     background-color: var(--rich-black);
 }
 .footer-sections a:hover {
