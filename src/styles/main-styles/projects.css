@@ -1,0 +1,140 @@
+/*******************PROJECTS SECTION!!!!*************/
+.projects-section {
+  width: 100vw;
+  height: 900px;
+  background-color: var(--rich-black);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.projects-title {
+  margin-left: 10px;
+  width: 80%;
+  max-width: 500px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--ghost-white);
+}
+.projects-title h2 {
+  font-size: 2.5rem;
+}
+.projects-title p {
+  font-size: 1.3rem;
+}
+.projects-title button {
+  width: 160px;
+  height: 54px;
+  background-color: var(--international-orange-engineering);
+  color: var(--ghost-white);
+  border: none;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+
+.projects-projects {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.projects-slide {
+  display: flex;
+  
+  width: calc(100% * 5);
+  transition: transform 0.5s ease-in-out;
+}
+.project-container {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CARROUSEL STYLES*/
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: var(--blue-sapphire);
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  color: var(--rich-black);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:disabled,
+.next:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/*END OF CARROUUSEL STYLES*/
+.project-container div {
+  background-color: black;
+  width: 200px;
+  max-width: 410px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 100px var(--blue-sapphire);
+  transition: 0.2s;
+}
+.project-container div:hover {
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0px 0px 100px var(--international-orange-engineering);
+}
+.project-container div figure {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.project-container div figure img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 5px var(--rich-black);
+  display: block;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: 0.2s;
+}
+.project-container div figure img:hover {
+  cursor: pointer;
+  filter: grayscale(0%);
+}
+.project-container h3 {
+  margin-top: 20px;
+  color: var(--ghost-white);
+  font-size: 1.5rem;
+}
+
+.project-container a {
+  color: var(--international-orange-engineering);
+  font-size: 1.2rem;
+}
+.project-container a:hover {
+  text-decoration: underline;
+}

@@ -1,167 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Eugenio Condori</title>
-    
+
     <!--css-->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="stylesheet" href="./src/styles/nav.css" />
+
+    <link rel="stylesheet" href="./src/styles/main.css" />
+
+    <link rel="stylesheet" href="./src/styles/main-styles/home.css" />
+    <link rel="stylesheet" href="./src/styles/main-styles/about.css" />
+    <link rel="stylesheet" href="./src/styles/main-styles/projects.css" />
+    <link rel="stylesheet" href="./src/styles/main-styles/contact.css" />
+
+    <link rel="stylesheet" href="./src/styles/footer.css" />
+    <link
+      rel="stylesheet"
+      media="(min-width: 560px)"
+      href="./src/styles/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(min-width: 1024px)"
+      href="./src/styles/desktop.css"
+    />
 
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
-
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!--******* HEADER **********-->
     <nav class="nav-container">
-        <input class="nav__checkbox" type="checkbox" name="" id ="nav__checkbox" >
-        <label class="nav__toggle" for="nav__checkbox" >
-            <i class="menu fa-solid fa-bars"></i> <!--burger menu-->
-            <i class="close fa-solid fa-x"></i> <!--x menu-->
-        </label>
-        <ul class="nav__menu">
-            <li class="menu__logo">
-                <span>E</span>
-            </li>
-            <li><a href="#">AboutMe</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-
+      <input class="nav__checkbox" type="checkbox" name="" id="nav__checkbox" />
+      <label class="nav__toggle" for="nav__checkbox">
+        <i class="menu fa-solid fa-bars"></i>
+        <!--burger menu-->
+        <i class="close fa-solid fa-x"></i>
+        <!--x menu-->
+      </label>
+      <ul class="nav__menu">
+        <li class="menu__logo">
+          <span>E</span>
+        </li>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contacts">Contact</a></li>
+      </ul>
     </nav>
 
     <!--***************** MAIN CONTENT ***************-->
     <main>
-        <!-- presentation -->
-        <section class="home-section">
-            <figure class="home-photo">
-                <img src="https://media-exp1.licdn.com/dms/image/D4E03AQGOKi4MV4MJrg/profile-displayphoto-shrink_800_800/0/1661376724146?e=1668643200&v=beta&t=esz-x-l8IXHWkVnTq3u493wDdYMG7kxVmShSsuEXAig" alt="my photo">
-                <figcaption></figcaption>
-            </figure>
-            <div class="home-words">
-                <h2>Hello I'm Eugenio Condori</h2>
-                <h1>Frontend Developer</h1>
-                <p>
-                    I'm a self taught Frontend Developer, who never stops learning and has a passion with technology.
-                </p>
-                <button type="button">About Me</button>
-            </div>
-        </section>
-        <!-- about me -->
-        <section class="about-section">
-            <h2 class="about-title">About Me</h2>
-            <div class="about-description">
-                Hello!, My name is Eugenio Condori, I'm a a self taught Frontend Developer, I love technology
-                like coding and enjoys gaming.
-            </div>
-            <div class="about-skills">
-                <h3>My Skills</h3>
-                <ul>
-                    <li>
-                        <p>HTML</p>
-                        <i class="fa-brands fa-html5"></i>
-                    </li>
-                    <li>
-                        <p>CSS</p>
-                        <i class="fa-brands fa-css3-alt"></i>
-                    </li>
-                    <li>
-                        <p>JS</p>
-                        <i class="fa-brands fa-js"></i>
-                    </li>
-                    <li>
-                        <p>GIT</p>
-                        <i class="fa-brands fa-git-alt"></i>
-                    </li>
-                </ul>
-            </div>
-        </section>
+      <!-- presentation -->
+      <section class="home-section">
+        <figure class="home-photo">
+          <img
+            src="https://media.licdn.com/dms/image/D4E03AQGOKi4MV4MJrg/profile-displayphoto-shrink_800_800/0/1661376724146?e=1686787200&v=beta&t=ryJqrFfMze7Ksu-0mle435LPjtsKNu9dXw11q-2KU6Q"
+            alt="my photo"
+          />
+          <figcaption></figcaption>
+        </figure>
+        <div class="home-words">
+          <h2 class="background-text">Hello I'm Eugenio</h2>
+          <h2 class="background-text">@Eufanzky</h2>
+          <h1 class="background-text">Frontend Developer</h1>
 
-        <!-- my projects -->
-        <section class="projects-section">
-            <div class="projects-title">
-                <h2>My Projects</h2>
-                <p>Made mainly with HTML CSS and JavaScript</p>
-                <button type="button">View All</button>
+          <a href="#about-me"><button type="button">About Me</button></a>
+        </div>
+      </section>
+
+      <div class="divisor-line">
+        <div class="circle-divisor-line"></div>
+      </div>
+      <!-- about me -->
+      <section class="about-section" id="about-me">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-description">
+          <p class="background-text">
+            I'm a self taught Frontend Developer, who never stops learning and
+            has a passion with technology.
+          </p>
+          <br />
+          <p>
+            I'm currently studying computer science at UMSA and improving my
+            Frontend Developer Skills at Platzi
+          </p>
+        </div>
+        <div class="about-skills">
+          <h3>My Skills</h3>
+          <ul>
+            <li>
+              <p>HTML</p>
+              <i class="fa-brands fa-html5"></i>
+            </li>
+            <li>
+              <p>CSS</p>
+              <i class="fa-brands fa-css3-alt"></i>
+            </li>
+            <li>
+              <p>JS</p>
+              <i class="fa-brands fa-js"></i>
+            </li>
+            <li>
+              <p>GIT</p>
+              <i class="fa-brands fa-git-alt"></i>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="divisor-line">
+        <div class="circle-divisor-line"></div>
+      </div>
+      <!-- my projects -->
+      <section class="projects-section" id="projects">
+        <div class="projects-title">
+          <h2>My Projects</h2>
+          <button type="button">View All</button>
+        </div>
+
+        <div class="projects-projects">
+          <button class="prev"><</button>
+          <div class="projects-slide">
+            <!-- <div class="project-container">
+              <div>
+                <figure>
+                  <img src="./src/img/twitterClon.png" alt="" />
+                </figure>
+              </div>
+              <h3>Twitter Clon</h3>
+              <a href="">Know More -></a>
             </div>
-
-            <div class="projects-projects">
-                <div class="project-container">
-                    <div>
-                        <figure>
-                            <img src="./src/img/twitterClon.png" alt="">
-                        </figure>
-                    </div>
-                    <h3>Twitter Clon</h3>
-                    <a href="">Know More -></a>
-                </div>
-
-                <div class="project-container">
-                    <div>
-                        <figure>
-                            <img src="./src/img/youtube-clon.png" alt="">
-                        </figure>
-                    </div>
-                    <h3>YouTube Clon</h3>
-                    <a href="">Know More -></a>
-                </div>
-
-                <div class="project-container">
-                    <div>
-                        <figure>
-                            <img src="./src/img/databit.png" alt="">
-                        </figure>
-                    </div>
-                    <h3>DataBit</h3>
-                    <a href="">Know More -></a>
-                </div>
-
-                <div class="project-container">
-                    <div>
-                        <figure>
-                            <img src="./src/img/clockTime.png" alt="">
-                        </figure>
-                    </div>
-                    <h3>Clock Time</h3>
-                    <a href="">Know More -></a>
-                </div>
+  
+            <div class="project-container">
+              <div>
+                <figure>
+                  <img src="./src/img/youtube-clon.png" alt="" />
+                </figure>
+              </div>
+              <h3>YouTube Clon</h3>
+              <a href="">Know More -></a>
             </div>
-            
-        </section>
-
-        <!-- contact me section -->
-        <section class="contact-section">
-            <div>
-                <h2>Let's work together on your next project</h2>
-                <a href="">CONTACT</a>
+  
+            <div class="project-container">
+              <div>
+                <figure>
+                  <img src="./src/img/databit.png" alt="" />
+                </figure>
+              </div>
+              <h3>DataBit</h3>
+              <a href="">Know More -></a>
             </div>
-        </section>
+  
+            <div class="project-container">
+              <div>
+                <figure>
+                  <img src="./src/img/clockTime.png" alt="" />
+                </figure>
+              </div>
+              <h3>Clock Time</h3>
+              <a href="">Know More -></a>
+            </div> -->
+          </div>
+          <button class="next">></button>
+        </div>
+      </section>
+
+      <div class="divisor-line">
+        <div class="circle-divisor-line"></div>
+      </div>
+      <!-- contact me section -->
+      <section class="contact-section" id="contacts">
+        <div class="contact-section-introduction">
+          <h2>Let's work together in your project!</h2>
+          <div class="contact-section-social-networks">
+            <a href="https://github.com/Eufanzky"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/eugenio-condori/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://twitter.com/Eufanzky"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <form id="contact-form" class="contact-form">
+            <label for="name">Full name:</label>
+            <input type="text" id="name" name="name" required /><br />
+
+            <label for="email">Email address:</label>
+            <input type="email" id="email" name="email" required /><br />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br />
+
+            <input type="submit" value="Send" />
+          </form>
+
+          <div id="message-sent"></div>
+        </div>
+      </section>
     </main>
 
     <!--***************** FOOTER CONTENT ***************-->
     <footer>
-        <div class="footer-sections">
-            <p>HOME</p>
-            <p>ABOUT</p>
-            <p>PROJECTS</p>
-            <p>CONTACT</p>
-        </div>
-        <div class="footer-links">
-            <p>E</p>
-            <a href=""><i class="fa-brands fa-github"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <p>Created with 💚 by Eufanzky</p>
-        </div>
+      <div class="footer-sections">
+        <a href="#about-me">
+          <p>ABOUT</p>
+        </a>
+        <a href="#projects">
+          <p>PROJECTS</p>
+        </a>
+        <a href="#contacts">
+          <p>CONTACT</p>
+        </a>
+      </div>
+      <div class="footer-links">
+        <p>E</p>
+        <a href="https://github.com/Eufanzky"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/eugenio-condori/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://twitter.com/Eufanzky"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <p>Created with 💚 by Eufanzky</p>
+      </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/6babf6a4d6.js"
       crossorigin="anonymous"
     ></script>
-    <!-- i guess there is no gonna be a footer -->
-</body>
+    <script src="./script.js"></script>
+    <script src="./src/js/scroll.js"></script>
+    <script src="./src/js/carrousel.js"></script>
+  </body>
 </html>

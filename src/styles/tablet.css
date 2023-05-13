@@ -1,0 +1,13 @@
+@media only screen and (min-width: 560px) {
+  /*nav menu*/
+  .nav__toggle {
+    display: none;
+  }
+  .nav__menu {
+    flex-direction: row;
+    padding-bottom: 0px;
+  }
+  .nav__menu li {
+    display: block;
+  }
+}
