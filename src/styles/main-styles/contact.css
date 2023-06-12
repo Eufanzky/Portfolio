@@ -35,6 +35,10 @@
 .contact-section-box .social-networks a {
     margin: 0px 10px;
     font-size: 2.5rem;
+    transition: 0.2s;
+}
+.contact-section-box .social-networks a:hover {
+    color: var(--international-orange-engineering);
 }
 
 .contact-section-box .contact-form {
@@ -57,52 +61,40 @@
 }
 
 
-.contact-section-box .contact-form .send-button  {
-  align-items: center;
-  background-clip: padding-box;
-  background-color: var(--international-orange-engineering);
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
+.contact-section-box .contact-form .send-button {
+  display: block;
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  font-family: sans-serif;
   text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+  color: #333;
+  border: 2px solid #333;
+  letter-spacing: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
 }
 
-.contact-section-box .contact-form .send-button :hover,
-.contact-section-box .contact-form .send-button :focus {
-  background-color: var(--cyan-process);
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+.contact-section-box .contact-form .send-button:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: var(--international-orange-engineering);
+  transition: all .35s;
+}
+.contact-section-box .contact-form .send-button:hover{
+  color: var(--blue-sapphire);
+  cursor: pointer;
+}
+.contact-section-box .contact-form .send-button:hover:after{
+  width: 100%;
 }
 
-.contact-section-box .contact-form .send-button :hover {
-  transform: translateY(-1px);
-}
-
-.contact-section-box .contact-form .send-button :active {
-  background-color: var(--cyan-process);
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
-}
 .message-sent {
-   
     color: var(--ghost-white);
-
 }
