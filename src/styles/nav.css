@@ -40,12 +40,12 @@ nav {
     flex-direction: column;
     gap: 20px;
     align-items: center;
-   
+    transition: 1s;
 }
 .nav__menu li {
     display: none;
-
     margin-right: 20px;
+    padding: 0px 5px;
 }
 
 /*menu lists*/
@@ -58,6 +58,9 @@ nav {
     font-size: 3rem;
     color: var(--international-orange-engineering);
 }
+.nav__menu li {
+    display: block;
+}
 .nav__menu li a{
     font-size: 1.5rem;
     color: var(--ghost-white);
@@ -66,9 +69,20 @@ nav {
     color: var(--blue-sapphire);
 }
 
+.menu_list_div {
+    /* transition: transform 10s ease-in-out; */
+    transform: translate(0px, -180px);
+}
+.menu_list_div li {
+    margin: 5px;
+    width: 250px;
+    text-align: center;
+}
+
+
 
 /*button-interaction*/
-#nav__checkbox:checked ~ ul.nav__menu li {
+/* #nav__checkbox:checked ~ ul.nav__menu li {
     display: block;
 }
 #nav__checkbox:checked ~ label.nav__toggle .close {
@@ -76,4 +90,28 @@ nav {
 }
 #nav__checkbox:checked ~ label.nav__toggle .menu {
     display: none;
+} */
+
+#nav__checkbox:checked ~ ul.nav__menu .menu_list_div {
+    transition: transform 1s ease-in-out;
+    transform: translate(0px, 0px);
+}
+#nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+}
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
+#nav__checkbox:not(:checked) ~ ul.nav__menu .menu_list_div {
+    transition: transform 1s ease-in-out;
+    transform: translate(0px, -190px);
+}
+
+/*control height*/
+#nav__checkbox:not(:checked) ~ ul.nav__menu {
+    height: 100px;
+}
+#nav__checkbox:checked ~ ul.nav__menu {
+    height: 250px;
 }

@@ -42,6 +42,7 @@
     <nav class="nav-container">
       <input class="nav__checkbox" type="checkbox" name="" id="nav__checkbox" />
       <label class="nav__toggle" for="nav__checkbox">
+        <!-- TODO : Menu Animation -->
         <i class="menu fa-solid fa-bars"></i>
         <!--burger menu-->
         <i class="close fa-solid fa-x"></i>
@@ -51,9 +52,11 @@
         <li class="menu__logo">
           <span>E</span>
         </li>
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contacts">Contact</a></li>
+        <div class="menu_list_div">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </div>
       </ul>
     </nav>
 
@@ -207,5 +210,6 @@
     <script src="./script.js"></script>
     <script src="./src/js/scroll.js"></script>
     <script src="./src/js/carrousel.js"></script>
+    <script src="./src/js/openCloseMenu.js"></script>
   </body>
 </html>

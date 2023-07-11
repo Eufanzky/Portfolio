@@ -5,7 +5,6 @@
   }
   .nav__menu {
     flex-direction: row;
-    padding-bottom: 0px;
   }
   .nav__menu li {
     display: block;
