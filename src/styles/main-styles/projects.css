@@ -26,8 +26,8 @@
   font-size: 1.3rem;
 }
 .projects-title button {
-  width: 160px;
-  height: 54px;
+  width: 155px;
+  height: 44px;
   background-color: var(--international-orange-engineering);
   color: var(--ghost-white);
   border: none;

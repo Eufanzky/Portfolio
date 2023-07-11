@@ -31,6 +31,10 @@ a {
     color: var(--ghost-white);
 }
 
+.element--display-none {
+    display: none;
+}
+
 .divisor-line {
     width: 100vw;
     height: 1px;

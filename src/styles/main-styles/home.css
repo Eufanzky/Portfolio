@@ -1,79 +1,129 @@
 /*------------home section----------*/
 
 .background-text {
-    background-color: var(--rich-black);
-    padding: 5px;
+  background-color: var(--rich-black);
+  padding: 5px;
 }
 .home-section {
-    padding-top: 20px;
-    width: 100vw;
-    height: 755px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative; /* add relative position */
-    /* add overflow hidden for hiding excess image */
-    overflow: hidden;
+  padding-top: 20px;
+  width: 100vw;
+  height: 755px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; /* add relative position */
+  /* add overflow hidden for hiding excess image */
+  overflow: hidden;
 }
 
 /* add a pesudo-element ::before */
 .home-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: var(--rich-black);
-    z-index: -1; /* move the pseudo-element behind content */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--rich-black);
+  z-index: -1; /* move the pseudo-element behind content */
 }
 
 .home-photo {
-    width: 235px;
-
+  width: 235px;
 }
 .home-photo img {
-    width: 100%;
-    border-radius: 100%;
+  width: 100%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 10px red;
 }
 
 .home-words {
-    margin-top: -100px;
-    max-width: 490px;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-top: 20px;
-    width: 80%;
+  margin-top: -100px;
+  max-width: 490px;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  width: 80%;
 }
-.home-words h2 {
-    margin: 5px 0px;
-    font-size: 1.5rem;
-    color: var(--international-orange-engineering);
+.name-title,
+.username-title {
+  margin: 5px 0px;
+  font-size: 1.5rem;
+  color: var(--international-orange-engineering);
 }
-.home-words h1 {
-    font-size: 2rem;
-    color: var(--ghost-white);
+.proffession-title {
+  max-width: 256px;
+  margin-top: 22px;
+  font-size: 2.5rem;
+  color: var(--ghost-white);
+  letter-spacing: 3px;
 }
+/*animated typewriting words*/
+.proffession-title--animation-1,
+.proffession-title--animation-2 {
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.proffession-title--animation-1 {
+  animation: typing 1.1s steps(9), cursor-hide 0.1s 1.4s forwards;
+}
+.proffession-title--animation-2 {
+  opacity: 0%;
+  animation: typing2 1.2s steps(11) forwards, cursor 0.4s step-end infinite alternate;
+  animation-delay: 2s;
+}
+
+
+
+
 .home-words p {
-    font-size: 1.2rem;
-    color: var(--ghost-white);
+  font-size: 1.2rem;
+  color: var(--ghost-white);
 }
 
 .home-words button {
-    width: 160px;
-    height: 54px;
-    background-color: var(--international-orange-engineering);
-    color: var(--ghost-white);
-    border: none;
-    font-weight: bolder;
-    font-size: 1.3rem;
+  width: 160px;
+  height: 54px;
+  background-color: var(--international-orange-engineering);
+  color: var(--ghost-white);
+  border: none;
+  font-weight: bolder;
+  font-size: 1.3rem;
 }
 
 .home-words button:hover {
-    background-color: var(--ghost-white);
-    color: var(--rich-black);
-    cursor: pointer;
+  background-color: var(--ghost-white);
+  color: var(--rich-black);
+  cursor: pointer;
+}
+
+@keyframes cursor-hide {
+  100% {
+    border-color: transparent;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes typing2 {
+  from {
+    opacity: 100%;
+    width: 0;
+  }
+  to {
+    opacity: 100%;
+  }
 }
