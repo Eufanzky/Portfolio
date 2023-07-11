@@ -1,12 +1,48 @@
 @media only screen and (min-width: 560px) {
   /*nav menu*/
+  .nav__checkbox {
+    display: none;
+  }
   .nav__toggle {
     display: none;
   }
   .nav__menu {
+    height: 50px;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+  }
+  .nav__menu li:first-child {
+    margin-left: 10px;
   }
   .nav__menu li {
     display: block;
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  .menu_list_div {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: none;
+    transform: translate(0px, 0px);
+  }
+
+  /*Detecting when checkbox is checked for animation*/
+  #nav__checkbox:checked ~ ul.nav__menu .menu_list_div {
+    transform: translate(0px, 0px);
+  }
+  #nav__checkbox:not(:checked) ~ ul.nav__menu .menu_list_div {
+    transform: translate(0px, 0px);
+  }
+
+  #nav__checkbox:not(:checked) ~ ul.nav__menu {
+    height: 100px;
+  }
+  #nav__checkbox:checked ~ ul.nav__menu {
+    height: 100px;
   }
 }

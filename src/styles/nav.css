@@ -71,7 +71,7 @@ nav {
 
 .menu_list_div {
     /* transition: transform 10s ease-in-out; */
-    transform: translate(0px, -180px);
+    transform: translate(0px, -190px);
 }
 .menu_list_div li {
     margin: 5px;
@@ -79,19 +79,7 @@ nav {
     text-align: center;
 }
 
-
-
-/*button-interaction*/
-/* #nav__checkbox:checked ~ ul.nav__menu li {
-    display: block;
-}
-#nav__checkbox:checked ~ label.nav__toggle .close {
-    display: block;
-}
-#nav__checkbox:checked ~ label.nav__toggle .menu {
-    display: none;
-} */
-
+/*Detecting when checkbox is checked for animation*/
 #nav__checkbox:checked ~ ul.nav__menu .menu_list_div {
     transition: transform 1s ease-in-out;
     transform: translate(0px, 0px);
@@ -108,7 +96,7 @@ nav {
     transform: translate(0px, -190px);
 }
 
-/*control height*/
+/*controling height*/
 #nav__checkbox:not(:checked) ~ ul.nav__menu {
     height: 100px;
 }
