@@ -25,15 +25,6 @@
 .projects-title p {
   font-size: 1.3rem;
 }
-.projects-title button {
-  width: 155px;
-  height: 44px;
-  background-color: var(--international-orange-engineering);
-  color: var(--ghost-white);
-  border: none;
-  font-weight: bolder;
-  font-size: 1.3rem;
-}
 
 .projects-projects {
   position: relative;
@@ -91,9 +82,9 @@
 /*END OF CARROUUSEL STYLES*/
 .project-container div {
   background-color: black;
-  width: 200px;
+  width: 60%;
   max-width: 410px;
-  height: 200px;
+  height: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,7 +93,6 @@
   transition: 0.2s;
 }
 .project-container div:hover {
-  width: 90%;
   max-width: 500px;
   box-shadow: 0px 0px 100px var(--international-orange-engineering);
 }
@@ -118,12 +108,12 @@
   box-shadow: 5px 5px 5px var(--rich-black);
   display: block;
   object-fit: cover;
-  filter: grayscale(100%);
+  filter: grayscale(0%);
   transition: 0.2s;
 }
 .project-container div figure img:hover {
   cursor: pointer;
-  filter: grayscale(0%);
+  filter: grayscale(100%);
 }
 .project-container h3 {
   margin-top: 20px;
