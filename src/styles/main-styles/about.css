@@ -1,8 +1,9 @@
 /*------------about section----------*/
 .about-section {
     padding: 50px 0px;
+    padding-bottom: 200px;
     width: 100vw;
-    height: 900px;
+    height: auto;
     background-color: var(--rich-black);
     display: flex;
     flex-direction: column;

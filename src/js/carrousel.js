@@ -1,37 +1,35 @@
-const carouselSlide = document.querySelector('.projects-slide');
-const carouselImages = document.querySelectorAll('.project-container');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
+//This code is for adding functionality to the carrousel
 
-let counter = 1;
-const size = carouselImages[0].clientWidth;
+const carrousel = document.querySelector(".projects-carrousel");
+const carrouselPoints = document.querySelectorAll(".carrousel-point");
 
-carouselSlide.style.transform = `translateX(-${size * counter}px)`;
+carrouselPoints.forEach((eachPoint, i) => {
+  carrouselPoints[i].addEventListener("click", () => {
+    let position = i;
+    let operation = position * -20;
+    carrousel.style.transform = `translateX(${operation}%)`;
 
-nextBtn.addEventListener('click', () => {
-  if (counter >= carouselImages.length - 1) return;
-  carouselSlide.style.transition = "transform 0.5s ease-in-out";
-  counter++;
-  carouselSlide.style.transform = `translateX(-${size * counter}px)`;
+    carrouselPoints.forEach((eachPoint, i) => {
+      carrouselPoints[i].classList.remove("active");
+    });
+
+    carrouselPoints[i].classList.add("active");
+  });
 });
 
-prevBtn.addEventListener('click', () => {
-  if (counter <= 0) return;
-  carouselSlide.style.transition = "transform 0.5s ease-in-out";
-  counter--;
-  carouselSlide.style.transform = `translateX(-${size * counter}px)`;
-});
 
-carouselSlide.addEventListener('transitionend', () => {
-  if (carouselImages[counter].id === 'lastClone') {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - 2;
-    carouselSlide.style.transform = `translateX(-${size * counter}px)`;
+
+
+
+function handleScreenChange(mq) {
+  if (mq.matches) {
+    carrousel.style.transform = `translateX(${0}%)`;
   }
+}
 
-  if (carouselImages[counter].id === 'firstClone') {
-    carouselSlide.style.transition = "none";
-    counter = carouselImages.length - counter;
-    carouselSlide.style.transform = `translateX(-${size * counter}px)`;
-  }
-});
+const mediaQuery = window.matchMedia('(min-width: 561px)');
+
+handleScreenChange(mediaQuery);
+
+mediaQuery.addEventListener('change', handleScreenChange);
+

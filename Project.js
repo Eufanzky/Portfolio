@@ -1,7 +1,8 @@
-class Project {
-  constructor(title, image, linkGithub, linkDeployment, description) {
+export class Project {
+  constructor(title, image, technologies, linkGithub, linkDeployment, description) {
     this.title = title;
     this.image = image;
+    this.technologies = technologies;
     this.linkGithub = linkGithub;
     this.linkDeployment = linkDeployment;
     this.description = description;
@@ -10,6 +11,7 @@ class Project {
     console.log(
       this.title,
       this.image,
+      this.technologies,
       this.linkGithub,
       this.linkDeployment,
       this.description
@@ -21,6 +23,9 @@ class Project {
   getImage() {
     return this.image;
   }
+  getTechnologies() {
+    return this.technologies;
+  }
   getLinkGithub() {
     return this.linkGithub;
   }
@@ -31,3 +36,5 @@ class Project {
     return this.description;
   }
 }
+
+

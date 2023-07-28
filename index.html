@@ -74,26 +74,32 @@
         <div class="home-words">
           <h2 class="name-title background-text">Hello I'm Eugenio</h2>
           <h2 class="username-title background-text">@Eufanzky</h2>
-          <h2 class="proffession-title proffession-title--animation-1">Frontend</h2>
-          <h2 class="proffession-title proffession-title--animation-2">Developer</h2>
-          <h1 class="element--display-none">Frontend Developer</h1> 
+          <h2 class="proffession-title proffession-title--animation-1">
+            Frontend
+          </h2>
+          <h2 class="proffession-title proffession-title--animation-2">
+            Developer
+          </h2>
+          <h1 class="element--display-none">Frontend Developer</h1>
           <!-- TODO: Make animation for this h1 title  ont tablet and desktop -->
         </div>
       </section>
 
-      
       <!-- about me -->
       <section class="about-section" id="about-me">
         <h2 class="about-title">About Me</h2>
         <div class="about-description">
           <p class="background-text">
-            Self taught Frontend Developer, who never stops learning and
-            has a passion with technology.
+            I'm looking for oportunities as a Frontend Developer. I consider
+            myself as a proactive, autonomous, creative, passionate with
+            technology and never stop learning person.
           </p>
           <br />
           <p>
-            Currently studying computer science on university and improving my
-            Frontend Developer Skills at Platzi, open to new opportunities.
+            My objective is to collaborate and create products with high quality
+            that make significant impact. I'm looking for new challenges and a
+            group of people who look for self improvement and help others every
+            day.
           </p>
         </div>
         <div class="about-skills">
@@ -101,33 +107,32 @@
           <ul>
             <li>
               <p>HTML</p>
-              <img src="./src/icons/html5-02-svgrepo-com.svg">
+              <img src="./src/icons/html5-02-svgrepo-com.svg" />
             </li>
             <li>
               <p>CSS</p>
-              <img src="./src/icons/css3-02-svgrepo-com.svg">
+              <img src="./src/icons/css3-02-svgrepo-com.svg" />
             </li>
             <li>
               <p>JS</p>
-              <img src="./src/icons/javascript-svgrepo-com.svg">
+              <img src="./src/icons/javascript-svgrepo-com.svg" />
             </li>
             <li>
               <p>GIT</p>
-              <img src="./src/icons/git-svgrepo-com.svg">
+              <img src="./src/icons/git-svgrepo-com.svg" />
             </li>
             <li>
               <p>ReactJS</p>
-              <img src="./src/icons/react-svgrepo-com.svg">
+              <img src="./src/icons/react-svgrepo-com.svg" />
             </li>
             <li>
               <p>Next js</p>
-              <img src="./src/icons/nextjs-icon-svgrepo-com.svg"/>
+              <img src="./src/icons/nextjs-icon-svgrepo-com.svg" />
             </li>
           </ul>
         </div>
       </section>
 
-      
       <!-- my projects -->
       <section class="projects-section" id="projects">
         <div class="projects-title">
@@ -135,8 +140,7 @@
         </div>
 
         <div class="projects-projects">
-          <button class="prev"><</button>
-          <div class="projects-slide">
+          <div class="projects-carrousel">
             <!-- Project container structure -->
             <!-- 
               <div class="project-container">
@@ -145,6 +149,13 @@
                 </figure>
                 <h3 class="project__title">Title</h3>
                 <p class="project__description">All the desciption comes here</p>
+                <div class="project-technologies">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>Javascript</p>
+                  <p>Reactjs</p>
+                  <p>Nextjs</p>
+                </div>
                 <div class="project-links-div">
                   <a class="project-links__github-link" href="">Github -></a>
                   <a class="project-links__deployment-link" href="">Deploy -></a>
@@ -152,40 +163,38 @@
               </div>
            -->
           </div>
-          <button class="next">></button>
+          <ul class="projects-carrousel-nav">
+            <li class="carrousel-point active"></li>
+            <li class="carrousel-point"></li>
+            <li class="carrousel-point"></li>
+            <li class="carrousel-point"></li>
+            <li class="carrousel-point"></li>
+          </ul>
         </div>
       </section>
 
-      
       <!-- contact me section -->
       <section class="contact-section" id="contacts">
         <div class="contact-section-box">
-          <h2>Let's work together in your project!</h2>
+          <h2>Contact me!</h2>
           <div class="social-networks">
-            <a href="https://github.com/Eufanzky"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/eugenio-condori/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
-            <a href="https://twitter.com/Eufanzky"
-              ><i class="fa-brands fa-twitter"></i
-            ></a>
+            <a href="https://github.com/Eufanzky">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </a>
+            <a href="https://www.linkedin.com/in/eugenio-condori/">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>Linkedin</p>
+            </a>
+            <a href="https://twitter.com/Eufanzky">
+              <i class="fa-brands fa-twitter"></i>
+              <p>Twitter</p>
+            </a>
+            <a href="mailto:eufanzky@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <p>Email</p>
+            </a>
           </div>
-          <form id="contact-form" class="contact-form">
-            <label for="name">Full name:</label>
-            <input type="text" id="name" name="name" required /><br />
-
-            <label for="email">Email address:</label>
-            <input type="email" id="email" name="email" required /><br />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea><br />
-
-            <input class="send-button" type="submit" value="Send" />
-          </form>
-
-          <div id="message-sent" class="message-sent"></div>
         </div>
       </section>
     </main>
@@ -216,16 +225,16 @@
             ><i class="fa-brands fa-twitter"></i
           ></a>
         </div>
-        <p>Created with 💚 by Eufanzky</p>
+        <p>© 2023 | By Eugenio Condori</p>
+   
       </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/6babf6a4d6.js"
       crossorigin="anonymous"
     ></script>
-    <script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
     <script src="./src/js/scroll.js"></script>
     <script src="./src/js/carrousel.js"></script>
-    <script src="./src/js/openCloseMenu.js"></script>
   </body>
 </html>

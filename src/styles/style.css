@@ -34,20 +34,3 @@ a {
 .element--display-none {
     display: none;
 }
-
-.divisor-line {
-    width: 100vw;
-    height: 1px;
-    background-color: var(--ghost-white);
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.circle-divisor-line {
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    background-color: var(--ghost-white);
-    border-radius: 100%;
-}

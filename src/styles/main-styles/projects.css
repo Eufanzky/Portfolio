@@ -1,19 +1,20 @@
 /*******************PROJECTS SECTION!!!!*************/
 .projects-section {
+  padding-top: 50px;
   width: 100vw;
-  height: 900px;
+  height: 1000px;
   background-color: var(--rich-black);
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-evenly;
+
+  position: relative;
 }
 
 .projects-title {
-  margin-left: 10px;
-  width: 80%;
   max-width: 500px;
-  height: 200px;
+  height: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -22,109 +23,123 @@
 .projects-title h2 {
   font-size: 2.5rem;
 }
-.projects-title p {
-  font-size: 1.3rem;
-}
+
 
 .projects-projects {
-  position: relative;
   width: 100%;
-  height: 400px;
-  overflow: hidden;
+  height: 80%;
 }
-.projects-slide {
+.projects-carrousel {
+  width: 500%;
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  transition: all 0.5s ease;
   
-  width: calc(100% * 5);
-  transition: transform 0.5s ease-in-out;
 }
+
+/*styles for each project container*/
 .project-container {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
+  margin: 0 5vw;
+  width: 90vw;
+  max-width: 560px;
+  height: 650px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--blue-sapphire);
+  border-radius: 5px;
+  box-shadow: -1px -1px 5px var(--blue-sapphire), 1px 1px 10px var(--blue-sapphire);
+  color: var(--ghost-white);
+
+  
 }
 
-/*CARROUSEL STYLES*/
-.prev,
-.next {
+.project-figure {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.project-figure__image {
+  width: 100%;
+  height: 100%;
+  /* flex: 1 0 100%; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.project__title {
+  padding: 0px 10px;
+  font-size: 1.9rem;
+}
+.project__description {
+  padding: 0px 20px;
+  font-size: 1.1rem;
+}
+.project-technologies {
+  width: 100%;
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.project-technologies p{
+  width: fit-content;
+  height: 34px;
+  margin: 10px;
+  padding: 5px 3px;
+  color: var(--cyan-process);
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.project-links-div {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.project-links__github-link, .project-links__deployment-link {
+  padding: 4.5px;
+  color: var(--cyan-process);
+  border: 1px solid var(--cyan-process);
+  border-radius: 5px;
+}
+.project-links__github-link:hover, .project-links__deployment-link:hover {
+  color: var(--ghost-white);
+  border: 1px solid var(--ghost-white);
+} 
+
+
+
+.projects-carrousel-nav {
+  display: flex;
+  column-gap: 1rem;
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: var(--blue-sapphire);
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  color: var(--rich-black);
-  cursor: pointer;
+  bottom: 2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
 }
+.projects-carrousel-nav .carrousel-point{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: ease 0.2s;
+}
+.projects-carrousel-nav .carrousel-point.active {
 
-.prev {
-  left: 0;
-}
-
-.next {
-  right: 0;
-}
-
-.prev:disabled,
-.next:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-/*END OF CARROUUSEL STYLES*/
-.project-container div {
-  background-color: black;
-  width: 60%;
-  max-width: 410px;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 0px 100px var(--blue-sapphire);
-  transition: 0.2s;
-}
-.project-container div:hover {
-  max-width: 500px;
-  box-shadow: 0px 0px 100px var(--international-orange-engineering);
-}
-.project-container div figure {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-.project-container div figure img {
-  width: 100%;
-  height: 100%;
-  box-shadow: 5px 5px 5px var(--rich-black);
-  display: block;
-  object-fit: cover;
-  filter: grayscale(0%);
-  transition: 0.2s;
-}
-.project-container div figure img:hover {
-  cursor: pointer;
-  filter: grayscale(100%);
-}
-.project-container h3 {
-  margin-top: 20px;
-  color: var(--ghost-white);
-  font-size: 1.5rem;
-}
-
-.project-container a {
-  color: var(--international-orange-engineering);
-  font-size: 1.2rem;
-}
-.project-container a:hover {
-  text-decoration: underline;
+  background-color: var(--international-orange-engineering);
+  opacity: 1;
 }
