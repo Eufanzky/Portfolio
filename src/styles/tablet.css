@@ -30,6 +30,9 @@
     transform: none;
     transform: translate(0px, 0px);
   }
+  .menu__logo {
+    margin-left: 27px;
+  }
 
   /*Detecting when checkbox is checked for animation*/
   #nav__checkbox:checked ~ ul.nav__menu .menu_list_div {
@@ -46,11 +49,9 @@
     height: 100px;
   }
 
-
   /*projects section*/
   .projects-section {
-    height: 2600px;
-    position: static;
+    height: 2400px;
   }
   .projects-title {
     height: 10%;
@@ -86,8 +87,8 @@
     height: 650px;
     grid-column: 1/3;
   }
+
   .projects-carrousel-nav {
     display: none;
   }
-
 }

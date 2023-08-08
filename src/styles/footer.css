@@ -53,6 +53,7 @@ footer {
 .footer-links__logo {
     margin: 0px 30px;
     font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
     color: var(--international-orange-engineering);
 }
 .footer-links a {

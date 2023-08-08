@@ -54,8 +54,10 @@ nav {
     display: block;
 }
 .menu__logo {
+    margin-top: 5px;
     margin-left: 10px;
     font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
     color: var(--international-orange-engineering);
 }
 .nav__menu li {

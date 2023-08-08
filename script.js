@@ -13,32 +13,32 @@ const createProjectCarrousel = () => {
     "Calculator",
     "./src/img/calculator.png",
     ["HTML", "CSS", "JavaScript", "Reactjs"],
+    "https://github.com/Eufanzky/calculator-app",
     "https://eufanzky.github.io/calculator-app/",
-    "not available yet :v",
     "Calculator is a website created with React js, which shows a responsive calculator with basic operations."
   );
   const projectTicTacToe = new Project(
     "Tic Tac Toe",
     "./src/img/tic-tac-toe.png",
     ["HTML", "CSS", "JavaScript"],
+    "https://github.com/Eufanzky/tic-Tac-Toe",
     "https://eufanzky.github.io/tic-Tac-Toe/",
-    "link is not available, come soon later :D",
     "Tic Tac Toe is a website made with HTML, CSS and Vanilla Javascript, the purpose of this project was to improve my Javascript skills, and it helped me manage in a better ways the way I made projects."
   );
   const projectClockTime = new Project(
     "Clock Time",
     "./src/img/clockTime.png",
     ["HTML", "CSS", "JavaScript"],
+    "https://github.com/Eufanzky/Clock-Time",
     "https://eufanzky.github.io/Clock-Time/",
-    "the link will be available sooner",
     "Clock Time is a web application which includes time management tools wich includes Timer, Chronometer and Pomodoro. This website has been made using HTML, CSS and Javascript."
   );
   const projectPassWordGenerator = new Project(
     "Password Generator",
     "./src/img/passwordGenerator.png",
     ["HTML", "CSS", "JavaScript"],
+    "https://github.com/Eufanzky/password-generator",
     "https://eufanzky.github.io/password-generator/",
-    "Wait :)",
     "Password Generator is a simple website which generates passwords wandomly with random characters. You can also select the size of the password you want to generate."
   );
 
