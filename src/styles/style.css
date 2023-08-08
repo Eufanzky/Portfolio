@@ -1,36 +1,56 @@
 :root {
-    --rich-black: #040F16;
-    --ghost-white: #FBFBFF;
-    --cyan-process: #01BAEF;
-    --blue-sapphire: #0B4F6C;
-    --international-orange-engineering: #B80C09;
+  --rich-black: #040f16;
+  --ghost-white: #fbfbff;
+  --cyan-process: #01baef;
+  --blue-sapphire: #0b4f6c;
+  --international-orange-engineering: #b80c09;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-    font-size: 62.5%;
-    font-family: 'Arvo', serif;
-    font-weight: lighter;
-
+  font-size: 62.5%;
+  font-family: "Arvo", serif;
+  font-weight: lighter;
 }
 li {
-    list-style: none;
+  list-style: none;
 }
 a {
-    text-decoration: none;
-    color: var(--ghost-white);
+  text-decoration: none;
+  color: var(--ghost-white);
 }
 
 .element--display-none {
-    display: none;
+  display: none;
+}
+
+/*scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--international-orange-engineering); 
+  border-radius: 10px; 
+}
+
+
+::-webkit-scrollbar-track {
+  background-color: var(--rich-black); 
+}
+
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--cyan-process);
 }
