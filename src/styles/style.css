@@ -37,7 +37,7 @@ a {
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -52,5 +52,5 @@ a {
 
 
 ::-webkit-scrollbar-track-piece {
-  background-color: var(--cyan-process);
+  background-color: var(--blue-sapphire);
 }

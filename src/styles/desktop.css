@@ -50,7 +50,7 @@
     height: 360px;
     position: relative;
     padding: 20px;
-    background: url("path-to-your-default-image.jpg") center/cover no-repeat;
+    background: url("path-to-default-image.jpg") center/cover no-repeat;
     background-color: rgba(0, 0, 0, 0);
     overflow: hidden; /* Hide the overflow content */
     color: rgba(255, 255, 255, 0);
