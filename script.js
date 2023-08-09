@@ -1,13 +1,21 @@
 import { Project } from "./Project.js";
 
 const createProjectCarrousel = () => {
+  const projectEducolab = new Project(
+    "Educolab",
+    "./src/img/educolab.png",
+    ["HTML", "CSS", "JavaScript", "Reactjs", "Nextjs"],
+    "https://github.com/EduColab/frontend",
+    "not available",
+    "At the New Relic-sponsored Platzi hackathon, I co-created Educolab—a project aimed at transforming education for Sustainable Development Goals. As a frontend developer, I crafted intuitive interfaces, collaborating closely with backend experts in a dynamic team of five."
+  );
   const projectRickAndMorty = new Project(
     "Rick And Morty App",
     "./src/img/rick-and-morty.png",
     ["HTML", "CSS", "JavaScript", "Reactjs"],
     "https://github.com/Eufanzky/Rick-and-Morty-App",
-    "not available :v", //TODO include deployment links,
-    "Rick and Morty App is a website created using Reactjs, which includes a list of all characters from the series Rick and Morty, and it also includes a memory game."
+    "not available", //TODO include deployment links,
+    "Rick and Morty App is a website created using Reactjs, which includes a list of all characters from the series Rick and Morty."
   );
   const projectCalculator = new Project(
     "Calculator",
@@ -33,6 +41,14 @@ const createProjectCarrousel = () => {
     "https://eufanzky.github.io/Clock-Time/",
     "Clock Time is a web application which includes time management tools wich includes Timer, Chronometer and Pomodoro. This website has been made using HTML, CSS and Javascript."
   );
+  const projectRastreoSatelital = new Project(
+    "Rastreo Satelital",
+    "./src/img/rastreo-satelital.png",
+    ["HTML", "CSS", "JavaScript"],
+    "https://github.com/Madays/rastreo-satelital",
+    "https://madays.github.io/rastreo-satelital/",
+    "Rastreo Satelital is a web map, that tracks platzi-sat-1 satellite in real time. "
+  );
   const projectPassWordGenerator = new Project(
     "Password Generator",
     "./src/img/passwordGenerator.png",
@@ -43,11 +59,11 @@ const createProjectCarrousel = () => {
   );
 
   const allProjects = [
+    projectEducolab,
     projectRickAndMorty,
     projectTicTacToe,
     projectCalculator,
-    projectPassWordGenerator,
-    projectClockTime,
+    projectRastreoSatelital,
   ];
   // <div class="project-container">
   //   <figure class="project-figure">
