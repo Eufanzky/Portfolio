@@ -113,14 +113,29 @@ const createProjectCarrousel = () => {
 
     const projectLinksDiv = document.createElement("div");
     projectLinksDiv.classList.add("project-links-div");
+
+    // const linkSymbol = document.createElement("i");
+    // linkSymbol.classList.add("fas fa-external-link-alt");
+
     const linkGithub = document.createElement("a");
     linkGithub.href = allProjects[i].getLinkGithub();
     linkGithub.classList.add("project-links__github-link");
-    linkGithub.innerText = "Github ->";
+    const linkTextGithub = document.createTextNode("Github ");
+    const linkIconGithub = document.createElement("i");
+    linkIconGithub.classList.add("fas", "fa-external-link-alt");
+    linkGithub.appendChild(linkTextGithub);
+    linkGithub.appendChild(linkIconGithub);
+
     const linkDeployment = document.createElement("a");
     linkDeployment.href = allProjects[i].getLinkDeployment();
     linkDeployment.classList.add("project-links__deployment-link");
-    linkDeployment.innerText = "Deploy ->";
+    const linkTextDeployment = document.createTextNode("Preview ");
+    const linkIconDeployment = document.createElement("i");
+    linkIconDeployment.classList.add("fas", "fa-external-link-alt");
+    linkDeployment.appendChild(linkTextDeployment);
+    linkDeployment.appendChild(linkIconDeployment);
+
+
     projectLinksDiv.append(linkGithub, linkDeployment);
 
     projectContainer.append(
